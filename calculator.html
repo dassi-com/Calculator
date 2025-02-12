@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <title>Calculator</title>
+
+</head>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 100px ;
+    font-family: 'Poppins';
+    background-image: url('bac1.png');
+    background-position: center;
+    background-size: cover;
+    color: white;
+  }
+
+  .container {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(225, 225, 225, .2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 30px;
+ 
+  }
+
+
+
+
+
+  input {
+    border: 2px solid lightgray;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+  }
+
+  ::placeholder {
+    font-weight: bold;
+    color: white;
+  }
+
+  button {
+    width: 120px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin: 10px;
+  }
+
+  #result {
+    border: 2px solid lightgray;
+    font-size: 17px;
+    padding: 10px;
+    width: 400px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+</style>
+
+<body>
+
+  <div class="container">
+    <div class="content">
+      <h1>Calculator</h1>
+
+      <!-- Input fields and buttons for DOM manipulation -->
+      <input type="number" id="input1" placeholder="Enter a number">
+      <input type="number" id="input2" placeholder="Enter another number"><br><br>
+      <button id="addBtn">Add</button>
+      <button id="subtractBtn">Subtract</button>
+      <button id="divideBtn">Divide</button>
+      <button id="multiplyBtn">Multiply</button>
+
+      <p id="result">Result: </p>
+    </div>
+  </div>
+
+ 
+  <script src="script.js"></script>
+</body>
+
+</html>
